@@ -20,7 +20,7 @@ const pageHeaderInfo = (url,prevUrl)=>{
             title:'商品信息',
             description:'添加商品',
             list: [
-                {text: '商品列表',path: '#shop_list'+ _search},
+                {text: '商品列表',path: '#/shop_list'},
                 {text: '添加商品'}
             ]
         },
@@ -28,7 +28,7 @@ const pageHeaderInfo = (url,prevUrl)=>{
             title:'商品信息',
             description:'商品更新',
             list: [
-                {text: '商品列表',path: '#shop_list'+ _search},
+                {text: '商品列表',path: '#/shop_list'},
                 {text: '商品更新'}
             ]
         }

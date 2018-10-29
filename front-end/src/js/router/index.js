@@ -11,7 +11,7 @@ import pageheader_model from "../models/page_header";
 import bus from '../utils/bus'
 
 var router = null
-
+let prevUrl = ''
 const _init = ()=>{
     router = new smeRouter('router-view')
 
@@ -68,7 +68,7 @@ const _activeLink = (route)=>{
 }
 
 const renderPageHeader =( req,res,next )=>{
-    pageheader_controller.render(pageheader_model.pageHeaderInfo)
+    pageheader_controller.render(pageheader_model.pageHeaderInfo(req.url,prevUrl))
     //prevUrl 记录的上一次的 URL
     prevUrl = req.url
 }

@@ -6,8 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var shoplistRouter = require('./routes/shoplist');
+var adminRouter = require('./routes/admin');
 
-var {version} = require('./config')
+var { version } = require('./config')
 var app = express();
 
 // view engine setup
@@ -27,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //启用路由工具
 app.use('/', indexRouter);
 
-app.use('/api/v1/shoplist', shoplistRouter);
+app.use('/api/'+ version+'/shoplist', shoplistRouter);
+app.use('/api/'+ version+'/admin', adminRouter);
 
 
 

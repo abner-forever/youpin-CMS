@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['./src/js/app'],
-        login:['./src/js/login']
+        admin:['./src/js/admin']
     },
     output: {
         filename: '[name].js',
@@ -31,9 +31,9 @@ module.exports = {
             chunks : ['main']
         }),
         new HtmlWebpackPlugin({
-            template: './src/pages/login.html',
-            filename: 'pages/login.html',
-            chunks:['login']
+            template: './src/pages/admin.html',
+            filename: 'pages/admin.html',
+            chunks:['admin']
         }),
         //复制static里面的文件到dev的static
         new CopyWebpackPlugin([{
