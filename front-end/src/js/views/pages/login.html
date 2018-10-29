@@ -1,0 +1,102 @@
+<body class="page-register-v3 layout-full">
+    <div class="page animsition vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out"
+        style="animation-duration: 800ms; opacity: 1;">&gt;
+        <div class="page-content vertical-align-middle">
+            <div class="panel">
+                <div class="panel-body">
+
+                    <div class="brand">
+                        <img class="brand-img" src="https://account.metinfo.cn/templates/account/min/img/logo.png" alt="MetInfo 用户中心"
+                            width="50">
+                        <h2 class="brand-text font-size-20 margin-top-20">会员注册</h2>
+                    </div>
+
+                    <form method="post" class="met-form-validation fv-form fv-form-bootstrap" action="https://account.metinfo.cn/register/register/doreg/"
+                        novalidate="novalidate"><button type="submit" class="fv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                        <div class="form-group form-material floating">
+                            <input type="email" class="form-control empty" name="email" data-fv-notempty="true"
+                                data-fv-field="email">
+                            <label class="floating-label">登录邮箱</label>
+                            <small class="help-block" data-fv-validator="emailAddress" data-fv-for="email"
+                                data-fv-result="NOT_VALIDATED" style="display: none;">请输入有效的邮件地址</small><small class="help-block"
+                                data-fv-validator="notEmpty" data-fv-for="email" data-fv-result="NOT_VALIDATED" style="display: none;">请填写必填项目</small></div>
+                        <div class="form-group form-material floating">
+                            <input type="text" class="form-control empty" name="company" data-fv-notempty="true"
+                                maxlength="14" minlength="2" data-fv-field="company">
+                            <label class="floating-label">公司名称</label>
+                            <small class="help-block" data-fv-validator="notEmpty" data-fv-for="company" data-fv-result="NOT_VALIDATED"
+                                style="display: none;">请填写必填项目</small><small class="help-block" data-fv-validator="stringLength"
+                                data-fv-for="company" data-fv-result="NOT_VALIDATED" style="display: none;">请输入符合长度限制的值</small></div>
+                        <div class="form-group form-material floating">
+                            <input type="password" class="form-control empty" name="password" data-fv-notempty="true"
+                                maxlength="16" minlength="6" data-fv-field="password">
+                            <label class="floating-label">密码</label>
+                            <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password"
+                                data-fv-result="NOT_VALIDATED" style="display: none;">请填写必填项目</small><small class="help-block"
+                                data-fv-validator="stringLength" data-fv-for="password" data-fv-result="NOT_VALIDATED"
+                                style="display: none;">请输入符合长度限制的值</small></div>
+                        <div class="form-group form-material floating">
+                            <input type="password" class="form-control empty" name="PasswordCheck" data-fv-identical="true"
+                                data-fv-identical-field="password" data-fv-field="PasswordCheck">
+                            <label class="floating-label">密码确认</label>
+                            <small class="help-block" data-fv-validator="identical" data-fv-for="PasswordCheck"
+                                data-fv-result="NOT_VALIDATED" style="display: none;">请输入相同的值</small></div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg margin-top-40">注册</button>
+                    </form>
+                    <p>已经有账号了? 去 <a href="https://account.metinfo.cn/login/">登录</a></p>
+                </div>
+            </div>
+
+            <footer class="page-copyright page-copyright-inverse">
+                <p class="txt">
+                    <span class="copyright">© 米拓</span><span class="beian">湘 ICP 备
+                        <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">07500799 号 - 5</a>
+                    </span>
+                </p>
+                <div class="powered_by_metinfo">
+                    Powered&nbsp;by&nbsp;<a href="https://www.metinfo.cn" target="_blank" title="企业网站管理系统">MetInfo</a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript" src="https://track.metinfo.cn/js/track.js"></script>
+    <script src="https://account.metinfo.cn/templates/account/cache/account.js?20180930180417"></script>
+
+    <script type="text/javascript">
+        var user_id = '';
+        (function () {
+            var hm = document.createElement("script");
+            var souhu = document.createElement("script");
+            hm.type = "text\/javascript";
+            souhu.type = "text\/javascript";
+            hm.src = "https://track.metinfo.cn/js/track.js";
+            souhu.src = "https://pv.sohu.com/cityjson?ie=utf-8";
+            var souhud = document.getElementsByTagName("script")[0];
+            var s = document.getElementsByTagName("script")[0];
+            souhud.parentNode.insertBefore(souhu, souhud);
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <div>
+        <div class="sweet-overlay" tabindex="-1"></div>
+        <div class="sweet-alert" tabindex="-1">
+            <div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div>
+            <div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div>
+            <div class="icon info"></div>
+            <div class="icon success"> <span class="line tip"></span> <span class="line long"></span>
+                <div class="placeholder"></div>
+                <div class="fix"></div>
+            </div>
+            <div class="icon custom"></div>
+            <h2>Title</h2>
+            <p class="lead text-muted">Text</p>
+            <p><button class="cancel btn btn-lg" tabindex="2">Cancel</button> <button class="confirm btn btn-lg"
+                    tabindex="1">OK</button></p>
+        </div>
+    </div>
+</body>

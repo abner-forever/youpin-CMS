@@ -1,0 +1,60 @@
+<div class="box box-info">
+	<!-- <div class="box-header with-border">
+		<h3 class="box-title">修改商品信息</h3>
+	</div> -->
+	<!-- /.box-header -->
+	<!-- form start -->
+	<form class="form-horizontal" id="update_shop" enctype="multipart/form-data">
+		<div class="box-body">
+			<div class="form-group">
+				<label for="shopImg" class="col-sm-2 control-label">商品原图</label>
+				<div class="col-sm-10">
+					<img width="80" src="http://localhost:3000{{data.shopImg}}" alt="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopImg" class="col-sm-2 control-label">商品新图</label>
+				<div class="col-sm-10">
+					<input type="file" name="shopImg" id="shopImg">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopName" class="col-sm-2 control-label">商品名称</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="shopName" value="{{data.shopName}}" id="shopName" placeholder="请输入商品名称"
+					 required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopKind" class="col-sm-2 control-label">商品类型</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" value="{{data.shopKind}}" name="shopKind" id="shopKind" placeholder="请输入商品类型"
+					 required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopDesc" class="col-sm-2 control-label">商品描述</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" value="{{data.shopDesc}}" name="shopDesc" id="shopDesc" placeholder="请输入商品描述"
+					 required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="price" class="col-sm-2 control-label">价格</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" value="{{data.price}}" name="price" id="price" placeholder="请输入商品价格"
+					 required>
+				</div>
+			</div>
+			
+		</div>
+		<input type="hidden" name = "id" value="{{data._id}}"> 
+		<!-- /.box-body -->
+		<div class="box-footer">
+			<button type="button" class="btn pull-left " id="backof">返回</button>
+			<button type="submit" class="btn btn-info pull-right" style="margin-left:20px">修改</button>
+			<button type="reset" class="btn btn-default pull-right">重置</button>
+		</div>
+		<!-- /.box-footer -->
+	</form>
+</div>

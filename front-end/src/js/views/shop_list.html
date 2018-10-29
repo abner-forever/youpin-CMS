@@ -1,0 +1,80 @@
+<div class="box shoplist-box">
+  <div class="box-header">
+    <a class="btn btn-success add_shop"> <i class="fa fa-plus"></i>&nbsp;&nbsp;添加</a>
+    <div class="input-group input-group-sm col-sm-2 pull-right">
+      <input type="text" class="form-control search-keyword" placeholder="搜索商品">
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-info btn-flat search-btn"> <i class="fa fa-search"></i> </button>
+      </span>
+    </div>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    {{if data.pageInfo.total == 0}}
+    <!-- 商品列表 -->
+    <p class="col-sm-7">暂无数据,快去 <a href="javascript:;" class="add_shop">添加</a> 吧</p>
+    {{else }}
+    <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
+          <thead>
+            <tr role="row">
+              <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending">商品图片</th>
+              <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending">商品名称</th>
+              <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1">商品描述</th>
+              <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1">商品价格</th>
+              <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1">上市时间</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{each data.items}}
+            <tr role="row" class="odd" data-id="{{$value._id}}">
+              <td class="sorting_1">
+                <img width="48" src="http://localhost:3000{{$value.shopImg}}" alt="" srcset="">
+              </td>
+              <td>{{$value.shopName}}</td>
+              <td>{{$value.shopDesc}}</td>
+              <td>¥{{$value.price}}</td>
+              <td>{{$value.formatTime}}</td>
+              <td>
+                <button class="btn btn-info btn-sm update_shop">修改</button>
+                <button class="btn btn-danger btn-sm remove_shop">删除</button>
+              </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 分页列表 -->
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">共{{data.pageInfo.total}}件商品</div>
+      </div>
+      <div class="col-sm-7">
+        <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+          <ul class="pagination">
+            <li class="paginate_button previous" id="example2_previous">
+              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo>1) ? data.pageInfo.pageNo-1 : data.pageInfo.pageNo %>">上一页</a>
+            </li>
+            <% for(let i=0; i < data.pageInfo.totalPage; i++ ) {%>
+            <li class="paginate_button {{ if data.pageInfo.pageNo== i+1 }} active {{/if}} ">
+              <a href="#/shop_list?pageNo=<%= i+1 %> "><%= i+1 %></a>
+              </li>
+
+            <% } %>
+            <li class="paginate_button next" id="example2_next">
+              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo < data.pageInfo.totalPage) ? ~~data.pageInfo.pageNo+1 : data.pageInfo.pageNo %>">下一页</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>
+<!-- /.box-body -->
+</div>

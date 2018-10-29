@@ -1,0 +1,44 @@
+<div class="box box-info">
+	<!-- form start -->
+	<form class="form-horizontal" id="save_shop" enctype="multipart/form-data">
+		<div class="box-body">
+			<div class="form-group">
+				<label for="shopImg" class="col-sm-2 control-label">商品图片</label>
+				<div class="col-sm-10">
+					<input type="file" name="shopImg" id="shopImg">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopName" class="col-sm-2 control-label">商品名称</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="shopName" id="shopName" placeholder="请输入商品名称" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopKind" class="col-sm-2 control-label">商品类型</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="shopKind" id="shopKind" placeholder="请输入商品类型" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="shopDesc" class="col-sm-2 control-label">商品描述</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="shopDesc" id="shopDesc" placeholder="请输入商品描述" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="price" class="col-sm-2 control-label">价格</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="price" id="price" placeholder="请输入商品价格" required>
+				</div>
+			</div>
+		</div>
+		<!-- /.box-body -->
+		<div class="box-footer">
+			<button type="button" class="btn pull-left " id="backof">返回</button>
+			<button type="submit" class="btn btn-info pull-right" style="margin-left:20px">保存</button>
+			<button type="reset" class="btn btn-default pull-right">清空</button>
+		</div>
+		<!-- /.box-footer -->
+	</form>
+</div>
