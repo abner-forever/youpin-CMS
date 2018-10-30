@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var shoplistRouter = require('./routes/shoplist');
 var adminRouter = require('./routes/admin');
+var userRouter = require('./routes/user');
 
 var { version } = require('./config')
 var app = express();
@@ -30,6 +31,7 @@ app.use('/', indexRouter);
 
 app.use('/api/'+ version+'/shoplist', shoplistRouter);
 app.use('/api/'+ version+'/admin', adminRouter);
+app.use('/api/'+ version+'/user', userRouter);
 
 
 

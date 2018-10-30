@@ -38,6 +38,7 @@ const bindEvent = () => {
 
         switch(_result.code){
             case 200: alert('登录成功'); 
+                        localStorage.token = _result.data.token
                         window.location.href ='../'
                     break;
             case 201: alert('用户名不经存在'); break;

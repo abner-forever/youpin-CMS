@@ -58,7 +58,7 @@
         <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
           <ul class="pagination">
             <li class="paginate_button previous" id="example2_previous">
-              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo>1) ? data.pageInfo.pageNo-1 : data.pageInfo.pageNo %>">上一页</a>
+              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo>1) ? data.pageInfo.pageNo-1 : data.pageInfo.pageNo %>&search=<%= data.pageInfo.search %>">上一页</a>
             </li>
             <% for(let i=0; i < data.pageInfo.totalPage; i++ ) {%>
             <li class="paginate_button {{ if data.pageInfo.pageNo== i+1 }} active {{/if}} ">
@@ -67,7 +67,7 @@
 
             <% } %>
             <li class="paginate_button next" id="example2_next">
-              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo < data.pageInfo.totalPage) ? ~~data.pageInfo.pageNo+1 : data.pageInfo.pageNo %>">下一页</a>
+              <a href="#/shop_list?pageNo=<%= (data.pageInfo.pageNo < data.pageInfo.totalPage) ? ~~data.pageInfo.pageNo+1 : data.pageInfo.pageNo %>&search=<%= data.pageInfo.search %>  ">下一页</a>
             </li>
           </ul>
         </div>
