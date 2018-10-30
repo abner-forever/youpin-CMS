@@ -35,8 +35,6 @@ const listone = async (req, res) => {
 
 const update = async (req, res) => {
     res.set('content-type', 'application/json; charset=utf8')
-    console.log(req.body,111);
-    
     let _data = await shoplist_model.update(req.body)
     handleData(_data, res, 'shoplist')
 } 

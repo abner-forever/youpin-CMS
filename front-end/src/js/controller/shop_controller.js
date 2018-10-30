@@ -1,12 +1,8 @@
 import shop_list_template from '../views/shop_list.html'
 
 import shop_list_model from '../models/shoplist'
-import {
-    shopadd
-} from './shop_add'
-import {
-    update
-} from './shop_update'
+import { shopadd } from './shop_add'
+import { update } from './shop_update'
 import qs from 'querystring'
 
 import {
@@ -27,7 +23,7 @@ const shoplist = async (req, res, next) => {
 
     res.render(html)
     bindShoplistEvent(_page)
-    
+
 }
 
 const bindShoplistEvent = (_page) => {
@@ -52,10 +48,10 @@ const bindShoplistEvent = (_page) => {
     $('.shoplist-box ').on('click', ".search-btn", function () {
         let _search = $('.search-keyword').val()
         let _params = {
-            search : _search,
-            pageNo : 1
+            search: _search,
+            pageNo: 1
         }
-     bus.emit('go' ,`/shop_list?${$.param(_params)}`)
+        bus.emit('go', `/shop_list?${$.param(_params)}`)
     })
 }
 

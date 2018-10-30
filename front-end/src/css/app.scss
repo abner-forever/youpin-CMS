@@ -3,11 +3,14 @@ body{
     padding: 0;
     color: #845f3f;
 }
-td,th{
+td{
     display: table-cell;
     text-align: center;
     vertical-align: middle!important;
     padding: 2px!important;
+}
+th{
+    text-align: center;
 }
 button{
     outline: none!important;

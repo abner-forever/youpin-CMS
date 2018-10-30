@@ -9,6 +9,12 @@ const pageHeaderInfo = (url,prevUrl)=>{
             title:'首页',
             list:[]
         },
+        '/map':{
+            title:'地图',
+            list: [
+                {text: '地图'}
+            ]
+        },
         '/shop_list':{
             title:'商品信息',
             description:'商品列表',

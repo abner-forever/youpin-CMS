@@ -5,6 +5,7 @@ import page_nofound from "../views/404.html";
 
 import pageheader_controller from '../controller/page_header'
 import shop from '../controller/shop_controller'
+import map from '../controller/map_controller'
 
 import pageheader_model from "../models/page_header";
 
@@ -29,6 +30,7 @@ const _init = ()=>{
     router.route('/shop_list',shop.shoplist)
     router.route('/shop_add',shop.shopadd)
     router.route('/shop_update',shop.update)
+    router.route('/map',map.init)
 
     router.route('/notfound',(req,res,next)=>{
         res.render(page_nofound)
