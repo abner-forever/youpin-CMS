@@ -15,6 +15,12 @@ const pageHeaderInfo = (url,prevUrl)=>{
                 {text: '地图'}
             ]
         },
+        '/usermanage':{
+            title:'用户信息管理',
+            list: [
+                {text: '用户信息管理'}
+            ]
+        },
         '/shop_list':{
             title:'商品信息',
             description:'商品列表',
