@@ -1,4 +1,20 @@
 //获取数据
+const listall = () => {
+    return $.ajax({
+        url: '/api/v1/shoplist/listall',
+        dataType:'json',
+        success: (res) => {
+            return res
+        },
+        error: (res) => {
+            console.error(res)
+            return false
+        }
+    })
+}
+
+
+
 const shoplist = (page) => {
     return $.ajax({
         url: '/api/v1/shoplist/list',
@@ -63,5 +79,6 @@ export default {
     add,
     remove,
     listone,
-    update
+    update,
+    listall
 }
