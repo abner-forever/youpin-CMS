@@ -16,7 +16,7 @@ module.exports = {
     output: {
         filename: './js/[name].js',
         //路径
-        path: PATH.resolve(__dirname, '../dist')
+        path: PATH.resolve(__dirname, '../build')
 
     },
     optimization:{
@@ -38,7 +38,7 @@ module.exports = {
         //复制static里面的文件到dev的static
         new CopyWebpackPlugin([{
             from: PATH.resolve(__dirname, '../static'),
-            to: PATH.resolve(__dirname, '../dist/static')
+            to: PATH.resolve(__dirname, '../build/static')
         }]),
         new MiniCssExtractPlugin({
             filename : 'css/[name]-[hash:6].css'
