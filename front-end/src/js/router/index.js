@@ -1,12 +1,13 @@
 import smeRouter from 'sme-router'
 
-import home_template from "../views/home.html";
 import page_nofound from "../views/404.html";
 
 import pageheader_controller from '../controller/page_header'
 import shop from '../controller/shop_controller'
 import map from '../controller/map_controller'
+import calendar from '../controller/calendar_controller'
 import usermanage from '../controller/usermanage'
+import homepage from '../controller/homepage'
 
 import pageheader_model from "../models/page_header";
 
@@ -22,22 +23,21 @@ const _init = ()=>{
         _activeLink(req.route)
     })
 
-    router.route('/',renderPageHeader)
 
     //匹配路由
-    router.route('/home',(req,res,next)=>{
-        res.render(home_template)
-    })
+    router.route('/home',homepage.home)
     router.route('/shop_list',shop.shoplist)
     router.route('/shop_add',shop.shopadd)
     router.route('/shop_update',shop.update)
     router.route('/map',map.init)
     router.route('/usermanage',usermanage.init)
+    router.route('/calendar',calendar.init)
 
     router.route('/notfound',(req,res,next)=>{
         res.render(page_nofound)
     })
 
+    router.route('/',renderPageHeader)
     router.route('*',(req,res,next)=>{
         if(req.url=== ''){
             res.redirect('/home')
@@ -58,15 +58,17 @@ const _init = ()=>{
 }
 
 const _navLink = (selector)=>{
-    let $nav = $(selector || '.sidebar-menu .nav-link[to]')
-    $nav.on('click',function(){
+    let $nav = $(selector || '.nav-link[to]')
+    $nav.on('click',function(e){
+        //阻止事件冒泡
+        // e.stopProgatation()
         let _path = $(this).attr('to')
         router.go(_path)
     })
 }
 
 const _activeLink = (route)=>{
-    let $nav = $('.sidebar-menu .nav-link[to]')
+    let $nav = $('.nav-link[to]')
     $nav.removeClass('active')
     $nav.filter(`[to='${route}']`).addClass('active')
 }
