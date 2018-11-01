@@ -25,7 +25,17 @@ const bindEvent = () => {
         let _result = await admin_model.register(qs.parse(_params))
 
         switch(_result.code){
-            case 200: alert('注册成功'); break;
+            case 200: showLoading({
+                            title:"注册成功",
+                            mask:true,
+                            success:function (res) {
+                                console.warn(JSON.stringify(res))
+                            }
+                        });
+                        // hideLoading() //为关闭showLoading弹框
+                        setTimeout(function(){
+                            hideLoading()
+                        },8000); break;
             case 201: alert('用户名已经存在'); break;
         }
     })
@@ -37,7 +47,18 @@ const bindEvent = () => {
         let _result = await admin_model.login(qs.parse(_params))
 
         switch(_result.code){
-            case 200: alert('登录成功'); 
+            case 200:   showLoading({
+                            title:"登录成功",
+                            mask:true,
+                            success:function (res) {
+                                console.warn(JSON.stringify(res))
+                            }
+                        });
+                        // hideLoading() //为关闭showLoading弹框
+                        setTimeout(function(){
+                            hideLoading()
+                        },8000)
+
                         localStorage.token = _result.data.token
                         window.location.href ='../'
                     break;
