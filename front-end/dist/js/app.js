@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 25);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1125,8 +1125,8 @@ var objectKeys = Object.keys || function (obj) {
 
 
 
-var punycode = __webpack_require__(30);
-var util = __webpack_require__(33);
+var punycode = __webpack_require__(31);
+var util = __webpack_require__(34);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -1858,7 +1858,7 @@ module.exports = "<section class=\"content-header\">    <h1>        {{title}}   
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defineProperty = __webpack_require__(26);
+var defineProperty = __webpack_require__(27);
 
 function _objectSpread(target) {
   for (var i = 1; i < arguments.length; i++) {
@@ -1909,9 +1909,9 @@ module.exports = _classCallCheck;
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _typeof = __webpack_require__(27);
+var _typeof = __webpack_require__(28);
 
-var assertThisInitialized = __webpack_require__(28);
+var assertThisInitialized = __webpack_require__(29);
 
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
@@ -1940,7 +1940,7 @@ module.exports = _getPrototypeOf;
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var setPrototypeOf = __webpack_require__(29);
+var setPrototypeOf = __webpack_require__(30);
 
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -2283,30 +2283,36 @@ module.exports = "<div class=\"map\">    <div class=\"box\">        <div class=\
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "用户信息管理界面 <!-- 在这写代码 -->"
+module.exports = "    <!-- Main content -->    <section class=\"content\">      <div class=\"row\">        <div class=\"col-md-3\">          <div class=\"box box-solid\">            <div class=\"box-header with-border\">              <h4 class=\"box-title\">可拆卸事件</h4>            </div>            <div class=\"box-body\">              <!-- the events -->              <div id=\"external-events\">                <div class=\"external-event bg-fuchsia\">午饭</div>                <div class=\"external-event bg-yellow\">回家</div>                <div class=\"external-event bg-aqua\">做家务</div>                <div class=\"external-event bg-light-blue\">敲代码</div>                <div class=\"external-event bg-red\">睡觉</div>                <div class=\"checkbox\">                  <label for=\"drop-remove\">                    <input type=\"checkbox\" id=\"drop-remove\">                    删除后下降                  </label>                </div>              </div>            </div>            <!-- /.box-body -->          </div>          <!-- /. box -->          <div class=\"box box-solid\">            <div class=\"box-header with-border\">              <h3 class=\"box-title\">创建事件</h3>            </div>            <div class=\"box-body\">              <div class=\"btn-group\" style=\"width: 100%; margin-bottom: 10px;\">                <!--<button type=\"button\" id=\"color-chooser-btn\" class=\"btn btn-info btn-block dropdown-toggle\" data-toggle=\"dropdown\">Color <span class=\"caret\"></span></button>-->                <ul class=\"fc-color-picker\" id=\"color-chooser\">                  <li><a class=\"text-aqua\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-blue\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-light-blue\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-teal\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-yellow\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-orange\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-green\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-lime\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-red\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-purple\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-fuchsia\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-muted\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                  <li><a class=\"text-navy\" href=\"#\"><i class=\"fa fa-square\"></i></a></li>                </ul>              </div>              <!-- /btn-group -->              <div class=\"input-group\">                <input id=\"new-event\" type=\"text\" class=\"form-control\" placeholder=\"Event Title\">                <div class=\"input-group-btn\">                  <button id=\"add-new-event\" type=\"button\" class=\"btn btn-primary btn-flat\">添加</button>                </div>                <!-- /btn-group -->              </div>              <!-- /input-group -->            </div>          </div>        </div>        <!-- /.col -->        <div class=\"col-md-9\">          <div class=\"box box-primary\">            <div class=\"box-body no-padding\">              <!-- THE CALENDAR -->              <div id=\"calendar\"></div>            </div>            <!-- /.box-body -->          </div>          <!-- /. box -->        </div>        <!-- /.col -->      </div>      <!-- /.row -->    </section>"
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
+module.exports = "用户信息管理界面 <!-- 在这写代码 -->"
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"callout callout-info\">  <h4>欢迎访问小米有品商品数据信息管理系统</h4>  <p>本管理系统主要,对商城的商品数据进行管理</p>  <p>1 对商品数据的增删查改</p></div><div class=\"row\">  <div class=\"col-lg-3 col-xs-6\">    <!-- small box -->    <div class=\"small-box bg-aqua\">      <div class=\"inner\">        <h3>{{data.pageInfo.total}}</h3>        <p>商品库存</p>      </div>      <div class=\"icon\">        <i class=\"ion ion-bag\"></i>      </div>      <a href=\"/#/shop_list\" class=\"small-box-footer\">更多<i class=\"fa fa-arrow-circle-right\"></i></a>    </div>  </div>  <!-- ./col -->  <div class=\"col-lg-3 col-xs-6\">    <!-- small box -->    <div class=\"small-box bg-green\">      <div class=\"inner\">        <h3>暂无<sup style=\"font-size: 20px\"></sup></h3>        <p>销量</p>      </div>      <div class=\"icon\">        <i class=\"ion ion-stats-bars\"></i>      </div>      <a href=\"#\" class=\"small-box-footer\">More info <i class=\"fa fa-arrow-circle-right\"></i></a>    </div>  </div>  <!-- ./col -->  <div class=\"col-lg-3 col-xs-6\">    <!-- small box -->    <div class=\"small-box bg-yellow\">      <div class=\"inner\">        <h3>0</h3>        <p>在线人数</p>      </div>      <div class=\"icon\">        <i class=\"ion ion-person-add\"></i>      </div>      <a href=\"#\" class=\"small-box-footer\">More info <i class=\"fa fa-arrow-circle-right\"></i></a>    </div>  </div>  <!-- ./col -->  <div class=\"col-lg-3 col-xs-6\">    <!-- small box -->    <div class=\"small-box bg-red\">      <div class=\"inner\">        <h3>0</h3>        <p>新品</p>      </div>      <div class=\"icon\">        <i class=\"ion ion-pie-graph\"></i>      </div>      <a href=\"#\" class=\"small-box-footer\">More info <i class=\"fa fa-arrow-circle-right\"></i></a>    </div>  </div>  <!-- ./col --></div>"
 
 /***/ }),
-/* 23 */,
-/* 24 */
+/* 24 */,
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(37);
+module.exports = __webpack_require__(38);
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 function _defineProperty(obj, key, value) {
@@ -2327,7 +2333,7 @@ function _defineProperty(obj, key, value) {
 module.exports = _defineProperty;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
@@ -2349,7 +2355,7 @@ function _typeof(obj) {
 module.exports = _typeof;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports) {
 
 function _assertThisInitialized(self) {
@@ -2363,7 +2369,7 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 function _setPrototypeOf(o, p) {
@@ -2378,7 +2384,7 @@ function _setPrototypeOf(o, p) {
 module.exports = _setPrototypeOf;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -2901,10 +2907,10 @@ module.exports = _setPrototypeOf;
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(31)(module), __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(32)(module), __webpack_require__(33)))
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -2932,7 +2938,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 var g;
@@ -2958,7 +2964,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2981,22 +2987,22 @@ module.exports = {
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Main Header --><header class=\"main-header\">    <!-- Logo -->    <a href=\"/\" class=\"logo\">        <!-- mini logo for sidebar mini 50x50 pixels -->        <span class=\"logo-mini\"><img width=\"30\" src=\"static/images/mi_login.png\" ></span>        <!-- logo for regular state and mobile devices -->        <span class=\"logo-lg\"><b>有品</b>商品信息管理系统</span>    </a>    <!-- Header Navbar -->    <nav class=\"navbar navbar-static-top\" role=\"navigation\">        <!-- Sidebar toggle button-->        <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"push-menu\" role=\"button\">            <span class=\"sr-only\">Toggle navigation</span>        </a>        <!-- Navbar Right Menu -->        <div class=\"navbar-custom-menu\">            <ul class=\"nav navbar-nav\">                <!-- Messages: style can be found in dropdown.less-->                <li class=\"dropdown messages-menu\">                    <!-- Menu toggle button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-envelope-o\"></i>                        <span class=\"label label-success\">4</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header\">你有4条消息</li>                        <li>                            <!-- inner menu: contains the messages -->                            <ul class=\"menu\">                                <li>                                    <!-- start message -->                                    <a href=\"#\">                                        <div class=\"pull-left\">                                            <!-- User Image -->                                            <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\"                                                alt=\"User Image\">                                        </div>                                        <!-- Message title and timestamp -->                                        <h4>                                           支持团队                                            <small><i class=\"fa fa-clock-o\"></i> 5 分钟</small>                                        </h4>                                        <!-- The message -->                                        <p>数据上传成功</p>                                    </a>                                </li>                                <!-- end message -->                            </ul>                            <!-- /.menu -->                        </li>                        <li class=\"footer\"><a href=\"#\">查看所有消息</a></li>                    </ul>                </li>                <!-- /.messages-menu -->                <!-- Notifications Menu -->                <li class=\"dropdown notifications-menu\">                    <!-- Menu toggle button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-bell-o\"></i>                        <span class=\"label label-warning\">10</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header email\">邮箱</li>                        <li>                            <!-- Inner Menu: contains the notifications -->                            <ul class=\"menu\">                                <li>                                    <!-- start notification -->                                    <a href=\"#\">                                        <i class=\"fa fa-users text-aqua\"></i> 5 new members joined today                                    </a>                                </li>                                <!-- end notification -->                            </ul>                        </li>                        <li class=\"footer\"><a href=\"#\">查看全部</a></li>                    </ul>                </li>                <!-- Tasks Menu -->                <li class=\"dropdown tasks-menu\">                    <!-- Menu Toggle Button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-flag-o\"></i>                        <span class=\"label label-danger\">9</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header\">You have 9 tasks</li>                        <li>                            <!-- Inner menu: contains the tasks -->                            <ul class=\"menu\">                                <li>                                    <!-- Task item -->                                    <a href=\"#\">                                        <!-- Task title and progress text -->                                        <h3>                                            Design some buttons                                            <small class=\"pull-right\">20%</small>                                        </h3>                                        <!-- The progress bar -->                                        <div class=\"progress xs\">                                            <!-- Change the css width attribute to simulate progress -->                                            <div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\"                                                aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">                                                <span class=\"sr-only\">20% Complete</span>                                            </div>                                        </div>                                    </a>                                </li>                                <!-- end task item -->                            </ul>                        </li>                        <li class=\"footer\">                            <a href=\"#\">View all tasks</a>                        </li>                    </ul>                </li>                <!-- User Account Menu -->                <li class=\"dropdown user user-menu\">                    <!-- Menu Toggle Button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <!-- The user image in the navbar-->                        <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"user-image\" alt=\"User Image\">                        <!-- hidden-xs hides the username on small devices so only the image appears. -->                        <span class=\"hidden-xs nickname\">管理员</span>                    </a>                    <ul class=\"dropdown-menu\">                        <!-- The user image in the menu -->                        <li class=\"user-header\">                            <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">                            <p>                               <small class=\"nickname\"></small>                                 超级管理员                            </p>                        </li>                        <!-- Menu Footer-->                        <li class=\"user-footer\">                            <div class=\"pull-left\">                                <a href=\"javascript:;\" class=\"btn btn-default btn-flat\">个人信息</a>                            </div>                            <div class=\"pull-right\">                                <a href=\"javascript:;\" class=\"btn btn-default btn-flat\" id=\"logout\">退出登录</a>                            </div>                        </li>                    </ul>                </li>                <li>                    <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>                  </li>                <!-- Control Sidebar Toggle Button -->                <!-- <li>              <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>            </li> -->            </ul>        </div>    </nav></header><!-- Left side column. contains the logo and sidebar --><aside class=\"main-sidebar\">    <!-- sidebar: style can be found in sidebar.less -->    <section class=\"sidebar\">        <!-- Sidebar user panel (optional) -->        <div class=\"user-panel\">            <div class=\"pull-left image\">                <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">            </div>            <div class=\"pull-left info nickname\">                <p>管理员1</p>                <!-- Status -->                <a href=\"#\"><i class=\"fa fa-circle text-success\"></i> 在线</a>            </div>        </div>        <!-- search form (Optional) -->        <form class=\"sidebar-form\">            <div class=\"input-group\">                <input type=\"text\" class=\"form-control\" placeholder=\"Search...\">                <span class=\"input-group-btn\">                    <button type=\"button\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\"><i class=\"fa fa-search\"></i>                    </button>                </span>            </div>        </form>        <!-- /.search form -->        <!-- Sidebar Menu -->        <ul class=\"sidebar-menu\" data-widget=\"tree\">            <li class=\"header\">列表</li>            <!-- 选项列表 -->            <!-- Optionally, you can add icons to the links -->            <li class=\"nav-link active\" to=\"/home\"><a href=\"javascript:;\"><i class=\"fa fa-home\"></i> <span>首页</span></a></li>            <li class=\"treeview nav-link\" to=\"/shop_list\">                <a href=\"JavaScript:;\"><i class=\"fa fa-list-alt\"></i> <span>商品信息</span>                    <span class=\"pull-right-container\">                        <i class=\"fa fa-angle-left pull-right\"></i>                    </span>                </a>                <ul class=\"treeview-menu\">                    <li class=\"nav-link\" to=\"/shop_list\"><a href=\"javascript:;\">商品列表</a></li>                    <li class=\"nav-link\" to=\"/shop_add\"><a href=\"#/shop_add\">添加商品</a></li>                </ul>            </li>            <li class=\"nav-link\" to=\"/map\"><a href=\"javascript:;\"><i class=\"fa fa-map\"></i> <span>地图</span></a></li>            <li class=\"nav-link\" to=\"/usermanage\"><a href=\"javascript:;\"><i class=\"fa fa-user\"></i> <span>用户信息管理</span></a></li>        </ul>        <!-- /.sidebar-menu -->    </section>    <!-- /.sidebar --></aside><!-- 内容区域 --><!-- Content Wrapper. Contains page content --><div class=\"content-wrapper\">    <!-- Content Header (Page header) -->    <section class=\"content-header-box\">        <!-- <h1 class=\"header-title\">            首页        </h1> -->        <!-- <ol class=\"breadcrumb\">            <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Level</a></li>            <li class=\"active\">Here</li>        </ol> -->    </section>    <!-- Main content -->    <section class=\"content container-fluid\" id=\"router-view\">        <!--------------------------          | Your Page Content Here |          -------------------------->    </section>    <!-- /.content --></div><!-- /.content-wrapper --><!-- Main Footer --><footer class=\"main-footer\">    <!-- To the right -->    <div class=\"pull-right hidden-xs\">        Anything you want    </div>    <!-- Default to the left -->    <strong>Copyright &copy; 2018 <a href=\"#\">花里项目组</a>.</strong> </footer><!-- Add the sidebar\'s background. This div must be placed    immediately after the control sidebar --><div class=\"control-sidebar-bg\"></div>"
+module.exports = "<!-- Main Header --><header class=\"main-header\">    <!-- Logo -->    <a href=\"/\" class=\"logo\">        <!-- mini logo for sidebar mini 50x50 pixels -->        <span class=\"logo-mini\"><img width=\"30\" src=\"static/images/mi_login.png\" ></span>        <!-- logo for regular state and mobile devices -->        <span class=\"logo-lg\"><b>有品</b>商品信息管理系统</span>    </a>    <!-- Header Navbar -->    <nav class=\"navbar navbar-static-top\" role=\"navigation\">        <!-- Sidebar toggle button-->        <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"push-menu\" role=\"button\">            <span class=\"sr-only\">Toggle navigation</span>        </a>        <!-- Navbar Right Menu -->        <div class=\"navbar-custom-menu\">            <ul class=\"nav navbar-nav\">                <!-- Messages: style can be found in dropdown.less-->                <li class=\"dropdown messages-menu\">                    <!-- Menu toggle button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-envelope-o\"></i>                        <span class=\"label label-success\">4</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header\">你有4条消息</li>                        <li>                            <!-- inner menu: contains the messages -->                            <ul class=\"menu\">                                <li>                                    <!-- start message -->                                    <a href=\"#\">                                        <div class=\"pull-left\">                                            <!-- User Image -->                                            <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\"                                                alt=\"User Image\">                                        </div>                                        <!-- Message title and timestamp -->                                        <h4>                                           支持团队                                            <small><i class=\"fa fa-clock-o\"></i> 5 分钟</small>                                        </h4>                                        <!-- The message -->                                        <p>数据上传成功</p>                                    </a>                                </li>                                <!-- end message -->                            </ul>                            <!-- /.menu -->                        </li>                        <li class=\"footer\"><a href=\"#\">查看所有消息</a></li>                    </ul>                </li>                <!-- /.messages-menu -->                <!-- Notifications Menu -->                <li class=\"dropdown notifications-menu\">                    <!-- Menu toggle button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-bell-o\"></i>                        <span class=\"label label-warning\">10</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header email\">邮箱</li>                        <li>                            <!-- Inner Menu: contains the notifications -->                            <ul class=\"menu\">                                <li>                                    <!-- start notification -->                                    <a href=\"#\">                                        <i class=\"fa fa-users text-aqua\"></i> 5 new members joined today                                    </a>                                </li>                                <!-- end notification -->                            </ul>                        </li>                        <li class=\"footer\"><a href=\"#\">查看全部</a></li>                    </ul>                </li>                <!-- Tasks Menu -->                <li class=\"dropdown tasks-menu\">                    <!-- Menu Toggle Button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <i class=\"fa fa-flag-o\"></i>                        <span class=\"label label-danger\">9</span>                    </a>                    <ul class=\"dropdown-menu\">                        <li class=\"header\">You have 9 tasks</li>                        <li>                            <!-- Inner menu: contains the tasks -->                            <ul class=\"menu\">                                <li>                                    <!-- Task item -->                                    <a href=\"#\">                                        <!-- Task title and progress text -->                                        <h3>                                            Design some buttons                                            <small class=\"pull-right\">20%</small>                                        </h3>                                        <!-- The progress bar -->                                        <div class=\"progress xs\">                                            <!-- Change the css width attribute to simulate progress -->                                            <div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\"                                                aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">                                                <span class=\"sr-only\">20% Complete</span>                                            </div>                                        </div>                                    </a>                                </li>                                <!-- end task item -->                            </ul>                        </li>                        <li class=\"footer\">                            <a href=\"#\">View all tasks</a>                        </li>                    </ul>                </li>                <!-- User Account Menu -->                <li class=\"dropdown user user-menu\">                    <!-- Menu Toggle Button -->                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">                        <!-- The user image in the navbar-->                        <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"user-image\" alt=\"User Image\">                        <!-- hidden-xs hides the username on small devices so only the image appears. -->                        <span class=\"hidden-xs nickname\">管理员</span>                    </a>                    <ul class=\"dropdown-menu\">                        <!-- The user image in the menu -->                        <li class=\"user-header\">                            <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">                            <p>                               <small class=\"nickname\"></small>                                 超级管理员                            </p>                        </li>                        <!-- Menu Footer-->                        <li class=\"user-footer\">                            <div class=\"pull-left\">                                <a href=\"javascript:;\" class=\"btn btn-default btn-flat\">个人信息</a>                            </div>                            <div class=\"pull-right\">                                <a href=\"javascript:;\" class=\"btn btn-default btn-flat\" id=\"logout\">退出登录</a>                            </div>                        </li>                    </ul>                </li>                <li>                    <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>                  </li>                <!-- Control Sidebar Toggle Button -->                <!-- <li>              <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>            </li> -->            </ul>        </div>    </nav></header><!-- Left side column. contains the logo and sidebar --><aside class=\"main-sidebar\">    <!-- sidebar: style can be found in sidebar.less -->    <section class=\"sidebar\">        <!-- Sidebar user panel (optional) -->        <div class=\"user-panel\">            <div class=\"pull-left image\">                <img src=\"static/libs/adminLTE/images/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">            </div>            <div class=\"pull-left info nickname\">                <p>管理员1</p>                <!-- Status -->                <a href=\"#\"><i class=\"fa fa-circle text-success\"></i> 在线</a>            </div>        </div>        <!-- search form (Optional) -->        <form class=\"sidebar-form\">            <div class=\"input-group\">                <input type=\"text\" class=\"form-control\" placeholder=\"Search...\">                <span class=\"input-group-btn\">                    <button type=\"button\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\"><i class=\"fa fa-search\"></i>                    </button>                </span>            </div>        </form>        <!-- /.search form -->        <!-- Sidebar Menu -->        <ul class=\"sidebar-menu\" data-widget=\"tree\">            <li class=\"header\">列表</li>            <!-- 选项列表 -->            <!-- Optionally, you can add icons to the links -->            <li class=\"nav-link active\" to=\"/home\"><a href=\"javascript:;\"><i class=\"fa fa-home\"></i> <span>首页</span></a></li>            <li class=\"treeview nav-link\" to=\"/shop_list\">                <a href=\"JavaScript:;\"><i class=\"fa fa-list-alt\"></i> <span>商品信息</span>                    <span class=\"pull-right-container\">                        <i class=\"fa fa-angle-left pull-right\"></i>                    </span>                </a>                <ul class=\"treeview-menu\">                    <li class=\"nav-link\" to=\"/shop_list\"><a href=\"javascript:;\">商品列表</a></li>                    <li class=\"nav-link\" to=\"/shop_add\"><a href=\"#/shop_add\">添加商品</a></li>                </ul>            </li>            <li class=\"nav-link\" to=\"/map\"><a href=\"javascript:;\"><i class=\"fa fa-map\"></i> <span>地图</span></a></li>            <li class=\"nav-link\" to=\"/usermanage\"><a href=\"javascript:;\"><i class=\"fa fa-user\"></i> <span>用户信息管理</span></a></li>            <li class=\"nav-link\" to=\"/calendar\"><a href=\"javascript:;\"><i class=\"fa fa-calendar\"></i> <span>日历</span></a></li>        </ul>        <!-- /.sidebar-menu -->    </section>    <!-- /.sidebar --></aside><!-- 内容区域 --><!-- Content Wrapper. Contains page content --><div class=\"content-wrapper\">    <!-- Content Header (Page header) -->    <section class=\"content-header-box\">        <!-- <h1 class=\"header-title\">            首页        </h1> -->        <!-- <ol class=\"breadcrumb\">            <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Level</a></li>            <li class=\"active\">Here</li>        </ol> -->    </section>    <!-- Main content -->    <section class=\"content container-fluid\" id=\"router-view\">        <!--------------------------          | Your Page Content Here |          -------------------------->    </section>    <!-- /.content --></div><!-- /.content-wrapper --><!-- Main Footer --><footer class=\"main-footer\">    <!-- To the right -->    <div class=\"pull-right hidden-xs\">        Anything you want    </div>    <!-- Default to the left -->    <strong>Copyright &copy; 2018 <a href=\"#\">花里项目组</a>.</strong> </footer><!-- Add the sidebar\'s background. This div must be placed    immediately after the control sidebar --><div class=\"control-sidebar-bg\"></div>"
 
 /***/ }),
-/* 35 */,
 /* 36 */,
-/* 37 */
+/* 37 */,
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./src/css/app.scss
-var app = __webpack_require__(25);
+var app = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./node_modules/sme-router/index.js
 var sme_router = __webpack_require__(8);
@@ -3726,8 +3732,183 @@ var searchPlace = function searchPlace() {
 /* harmony default export */ var map_controller = ({
   init: map_controller_init
 });
+// EXTERNAL MODULE: ./src/js/views/calendar.html
+var calendar = __webpack_require__(21);
+var calendar_default = /*#__PURE__*/__webpack_require__.n(calendar);
+
+// CONCATENATED MODULE: ./src/js/controller/calendar_controller.js
+
+
+var calendar_controller_init = function init() {
+  $('#router-view').html(calendar_default.a);
+  $(function () {
+    /* initialize the external events
+     -----------------------------------------------------------------*/
+    function init_events(ele) {
+      ele.each(function () {
+        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+        // it doesn't need to have a start or end
+        var eventObject = {
+          title: $.trim($(this).text()) // use the element's text as the event title
+          // store the Event Object in the DOM element so we can get to it later
+
+        };
+        $(this).data('eventObject', eventObject); // make the event draggable using jQuery UI
+
+        $(this).draggable({
+          zIndex: 1070,
+          revert: true,
+          // will cause the event to go back to its
+          revertDuration: 0 //  original position after the drag
+
+        });
+      });
+    }
+
+    init_events($('#external-events div.external-event'));
+    /* initialize the calendar
+     -----------------------------------------------------------------*/
+    //Date for the calendar events (dummy data)
+
+    var date = new Date();
+    var d = date.getDate(),
+        m = date.getMonth(),
+        y = date.getFullYear();
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      buttonText: {
+        today: 'today',
+        month: 'month',
+        week: 'week',
+        day: 'day'
+      },
+      //Random default events
+      events: [{
+        title: 'All Day Event',
+        start: new Date(y, m, 1),
+        backgroundColor: '#f56954',
+        //red
+        borderColor: '#f56954' //red
+
+      }, {
+        title: 'Long Event',
+        start: new Date(y, m, d - 5),
+        end: new Date(y, m, d - 2),
+        backgroundColor: '#f39c12',
+        //yellow
+        borderColor: '#f39c12' //yellow
+
+      }, {
+        title: 'Meeting',
+        start: new Date(y, m, d, 10, 30),
+        allDay: false,
+        backgroundColor: '#0073b7',
+        //Blue
+        borderColor: '#0073b7' //Blue
+
+      }, {
+        title: 'Lunch',
+        start: new Date(y, m, d, 12, 0),
+        end: new Date(y, m, d, 14, 0),
+        allDay: false,
+        backgroundColor: '#00c0ef',
+        //Info (aqua)
+        borderColor: '#00c0ef' //Info (aqua)
+
+      }, {
+        title: 'Birthday Party',
+        start: new Date(y, m, d + 1, 19, 0),
+        end: new Date(y, m, d + 1, 22, 30),
+        allDay: false,
+        backgroundColor: '#00a65a',
+        //Success (green)
+        borderColor: '#00a65a' //Success (green)
+
+      }, {
+        title: 'Click for Google',
+        start: new Date(y, m, 28),
+        end: new Date(y, m, 29),
+        url: 'http://google.com/',
+        backgroundColor: '#3c8dbc',
+        //Primary (light-blue)
+        borderColor: '#3c8dbc' //Primary (light-blue)
+
+      }],
+      editable: true,
+      droppable: true,
+      // this allows things to be dropped onto the calendar !!!
+      drop: function drop(date, allDay) {
+        // this function is called when something is dropped
+        // retrieve the dropped element's stored Event Object
+        var originalEventObject = $(this).data('eventObject'); // we need to copy it, so that multiple events don't have a reference to the same object
+
+        var copiedEventObject = $.extend({}, originalEventObject); // assign it the date that was reported
+
+        copiedEventObject.start = date;
+        copiedEventObject.allDay = allDay;
+        copiedEventObject.backgroundColor = $(this).css('background-color');
+        copiedEventObject.borderColor = $(this).css('border-color'); // render the event on the calendar
+        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+
+        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true); // is the "remove after drop" checkbox checked?
+
+        if ($('#drop-remove').is(':checked')) {
+          // if so, remove the element from the "Draggable Events" list
+          $(this).remove();
+        }
+      }
+    });
+    /* ADDING EVENTS */
+
+    var currColor = '#3c8dbc'; //Red by default
+    //Color chooser button
+
+    var colorChooser = $('#color-chooser-btn');
+    $('#color-chooser > li > a').click(function (e) {
+      e.preventDefault(); //Save color
+
+      currColor = $(this).css('color'); //Add color effect to button
+
+      $('#add-new-event').css({
+        'background-color': currColor,
+        'border-color': currColor
+      });
+    });
+    $('#add-new-event').click(function (e) {
+      e.preventDefault(); //Get value and make sure it is not null
+
+      var val = $('#new-event').val();
+
+      if (val.length == 0) {
+        return;
+      } //Create events
+
+
+      var event = $('<div />');
+      event.css({
+        'background-color': currColor,
+        'border-color': currColor,
+        'color': '#fff'
+      }).addClass('external-event');
+      event.html(val);
+      $('#external-events').prepend(event); //Add draggable funtionality
+
+      init_events(event); //Remove event from text input
+
+      $('#new-event').val('');
+    });
+  });
+};
+
+/* harmony default export */ var calendar_controller = ({
+  init: calendar_controller_init
+});
 // EXTERNAL MODULE: ./src/js/views/usermanage.html
-var usermanage = __webpack_require__(21);
+var usermanage = __webpack_require__(22);
 var usermanage_default = /*#__PURE__*/__webpack_require__.n(usermanage);
 
 // CONCATENATED MODULE: ./src/js/controller/usermanage.js
@@ -3741,7 +3922,7 @@ var usermanage_init = function init() {
   init: usermanage_init
 });
 // EXTERNAL MODULE: ./src/js/views/home.html
-var home = __webpack_require__(22);
+var home = __webpack_require__(23);
 var home_default = /*#__PURE__*/__webpack_require__.n(home);
 
 // CONCATENATED MODULE: ./src/js/controller/homepage.js
@@ -3814,6 +3995,12 @@ var page_header_pageHeaderInfo = function pageHeaderInfo(url, prevUrl) {
         text: '地图'
       }]
     },
+    '/calendar': {
+      title: '日历',
+      list: [{
+        text: '日历'
+      }]
+    },
     '/usermanage': {
       title: '用户信息管理',
       list: [{
@@ -3864,6 +4051,7 @@ var page_header_pageHeaderInfo = function pageHeaderInfo(url, prevUrl) {
 
 
 
+
 var router = null;
 var router_prevUrl = '';
 
@@ -3880,6 +4068,7 @@ var router_init = function _init() {
   router.route('/shop_update', shop_controller.update);
   router.route('/map', map_controller.init);
   router.route('/usermanage', controller_usermanage.init);
+  router.route('/calendar', calendar_controller.init);
   router.route('/notfound', function (req, res, next) {
     res.render(_404_default.a);
   });
@@ -4096,7 +4285,7 @@ function () {
 
 
 
-var body_template = __webpack_require__(34);
+var body_template = __webpack_require__(35);
 
 
  //登录拦截验证

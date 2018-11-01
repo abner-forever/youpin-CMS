@@ -8,6 +8,22 @@ body {
     }
     .login-box-body{
         border-radius: 8px;
+        .err-tip{
+            width: 100%;
+            height: 20px;
+            color: red;
+            font-size: 14px;
+            line-height: 20px;
+            display: none;
+            em{
+                vertical-align: middle;
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: url(../img/warning.png) top center no-repeat;
+                margin-top: -2px;
+            }
+        }
     }
     button.btn{
         border-radius: 5px!important;

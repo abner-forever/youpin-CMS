@@ -10,4 +10,17 @@ const toast =(text,bgColor,options)=>{
         position : 'top-center'
     }) 
 }
-export default toast
+const errTip= (txt)=>{
+    $("#form-content .err-tip").find("span").text(txt);
+    $("#form-content .err-tip").show();
+    $("#form-content .password").addClass("error")
+}
+
+export default {
+    toast,
+    errTip
+}
+export {
+    toast,
+    errTip
+}

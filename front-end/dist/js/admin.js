@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 35);
+/******/ 	return __webpack_require__(__webpack_require__.s = 36);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -149,7 +149,7 @@ exports.encode = exports.stringify = __webpack_require__(6);
 
 /***/ }),
 
-/***/ 23:
+/***/ 24:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"login-box\">    <div class=\"login-logo\">        <a href=\"/\"><b>有品</b>商品信息管理系统</a>    </div>    <!-- /.login-logo -->    {{if type == \'login\'}}    <div class=\"login-box-body login\">        <p class=\"login-box-msg\">欢迎登录</p>        <form id=\"login-form\" method=\"POST\">            <div class=\"form-group has-feedback\">                <input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"用户名\">                <span class=\"glyphicon glyphicon-lock fa fa-user form-control-feedback\"></span>            </div>            <div class=\"form-group has-feedback\">                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"密码\">                <span class=\"glyphicon glyphicon-lock fa fa-lock form-control-feedback\"></span>            </div>            <div class=\"row\">                <div class=\"col-xs-8\">                    <div class=\"checkbox icheck\">                    </div>                </div>                <!-- /.col -->                <div class=\"col-xs-4\">                    <button type=\"submit\" class=\"btn btn-primary btn-block btn-flat login-submit\">登录</button>                </div>                <!-- /.col -->            </div>        </form>        <!-- /.social-auth-links -->        <!-- <a href=\"JavaScript:;\">忘记密码?</a><br> -->        <a href=\"javascript:;\" data-type=\"register\" class=\"text-center switch-btn\">没有账号?去注册</a>    </div>    <!-- /.login-box-body -->    {{ else }}    <div class=\"login-box-body register\">        <p class=\"login-box-msg\">开始注册</p>        <form id=\"register-form\" >            <div class=\"form-group has-feedback\">                <input type=\"text\" class=\"form-control\" name=\"username\" placeholder=\"用户名\">                <span class=\"glyphicon glyphicon-lock fa fa-user form-control-feedback\"></span>            </div>            <div class=\"form-group has-feedback\">                <input type=\"password\" class=\"form-control\" name=\"password\" placeholder=\"密码\">                <span class=\"glyphicon glyphicon-lock fa fa-lock form-control-feedback\"></span>            </div>            <div class=\"form-group has-feedback\">                <input type=\"password\" class=\"form-control\" placeholder=\"确认密码\">                <span class=\"glyphicon glyphicon-lock fa fa-lock form-control-feedback\"></span>            </div>            <div class=\"form-group has-feedback\">                <input type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"邮箱\">                <span class=\"glyphicon glyphicon-lock fa fa-envelope form-control-feedback\"></span>            </div>            <div class=\"form-group has-feedback\">                    <input type=\"text\" class=\"form-control\" name=\"nickname\" placeholder=\"昵称\">                    <span class=\"glyphicon glyphicon-lock fa fa-transgender-alt form-control-feedback\"></span>                </div>            <div class=\"row\">                <div class=\"col-xs-8\">                    <div class=\"checkbox icheck\">                    </div>                </div>                <!-- /.col -->                <div class=\"col-xs-4\">                    <button type=\"submit\" class=\"btn btn-primary btn-block btn-flat register-submit\">注册</button>                </div>                <!-- /.col -->            </div>        </form>        <!-- /.social-auth-links -->        <a href=\"javascript:;\" data-type=\"login\" class=\"text-center switch-btn\">已有账号?去登录</a>    </div>    {{ /if}}</div>"
@@ -200,29 +200,29 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 35:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(38);
+module.exports = __webpack_require__(39);
 
 
 /***/ }),
 
-/***/ 36:
+/***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ 38:
+/***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./src/css/admin.scss
-var admin = __webpack_require__(36);
+var admin = __webpack_require__(37);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
 var regenerator = __webpack_require__(0);
@@ -233,7 +233,7 @@ var asyncToGenerator = __webpack_require__(1);
 var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator);
 
 // EXTERNAL MODULE: ./src/js/views/pages/form.html
-var pages_form = __webpack_require__(23);
+var pages_form = __webpack_require__(24);
 var form_default = /*#__PURE__*/__webpack_require__.n(pages_form);
 
 // CONCATENATED MODULE: ./src/js/models/admin.js
