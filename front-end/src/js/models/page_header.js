@@ -15,6 +15,12 @@ const pageHeaderInfo = (url,prevUrl)=>{
                 {text: '地图'}
             ]
         },
+        '/calendar':{
+            title:'日历',
+            list: [
+                {text: '日历'}
+            ]
+        },
         '/usermanage':{
             title:'用户信息管理',
             list: [
